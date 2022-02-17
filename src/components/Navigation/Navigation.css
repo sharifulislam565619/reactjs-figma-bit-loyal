@@ -1,0 +1,35 @@
+.navbar-nav li ::after {
+  content: url(../../images/icon/start8.png);
+  margin-left: 16px;
+}
+li:nth-child(5) ::after {
+  display: none;
+}
+.nav-link {
+  color: white;
+  font-size: 16px;
+}
+
+.nav-item img {
+  border: 1px solid #7e7d81;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.nav-item img:hover {
+  border: 1px solid #18a0fb;
+}
+.wallet {
+  width: 226px;
+  height: 52px;
+  background-color: #322854;
+  padding: 9px 28px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.wallet a {
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 16px;
+}

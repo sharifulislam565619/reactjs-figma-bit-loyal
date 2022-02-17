@@ -1,0 +1,31 @@
+.roadmap h1 {
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 115px;
+  color: #fff;
+}
+
+.roadmap small {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #c2abcb;
+}
+.roadmap-years {
+  background-color: #1e103b;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 400px;
+}
+.roadmap-years li a {
+  font-size: 16px;
+  color: #c2abcb;
+}
+
+@media only screen and (max-width: 768px) {
+  .roadmap-details {
+    display: none;
+  }
+}
