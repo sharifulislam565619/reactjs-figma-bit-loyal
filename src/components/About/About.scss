@@ -4,16 +4,15 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
 .royal {
   color: #c31f83;
 }
-
 .pve {
   color: #14a151;
 }
 
-#about_section .para_content {
-  font-size: 20px;
+#about_section {
+  .para_content{
+    font-size: 20px;
+  }
 }
-/*# sourceMappingURL=About.css.map */

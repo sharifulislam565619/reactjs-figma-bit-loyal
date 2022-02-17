@@ -1,10 +1,10 @@
 #footer {
   text-align: center;
+  .footer_title{
+    background: url('../../images/contact_us_star.png') center/ contain no-repeat;
+  }
 }
 
-#footer .footer_title {
-  background: url("../../images/contact_us_star.png") center/contain no-repeat;
-}
 
 #footer h1 {
   font-family: Georama;
@@ -15,37 +15,26 @@
   letter-spacing: 0.02em;
   color: #ffffff;
 }
-
 .social-icon i {
   color: #1f1043;
   background-color: white;
   width: 120px;
   height: 120px;
   margin-left: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   font-size: 55px;
   text-align: center;
 }
 
 .social-icon ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .social-icon li {
   list-style: none;
 }
-
 .social-icon ul li a {
   text-decoration: none;
 }
@@ -55,11 +44,9 @@
   margin-left: 20px;
   margin-right: 20px;
 }
-
 li:nth-child(5) ::after {
   display: none;
 }
-
 .footerBottom {
   border-top: 1px solid #473e6b;
 }
@@ -75,4 +62,3 @@ li:nth-child(5) ::after {
     font-size: 30px;
   }
 }
-/*# sourceMappingURL=Footer.css.map */

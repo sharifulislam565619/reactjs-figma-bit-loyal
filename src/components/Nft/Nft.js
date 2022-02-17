@@ -23,17 +23,13 @@ import './Nft.css';
 
 const Nft = () => {
    return (
-      <div style={{}}>
+      <div id="nft_swiper_wrapper">
          <Swiper
-            slidesPerView={4}
-            grid={{
-               rows: 2,
-            }}
+            slidesPerView={4.6}
+            
             spaceBetween={30}
-            pagination={{
-               clickable: true,
-            }}
-            modules={[Grid, Pagination]}
+
+           
             className="mySwiper"
          >
             <SwiperSlide><img src={img1} alt="" /></SwiperSlide>
@@ -50,7 +46,30 @@ const Nft = () => {
             <SwiperSlide><img src={img5} alt="" /></SwiperSlide>
             <SwiperSlide><img src={img6} alt="" /></SwiperSlide>
             <SwiperSlide><img src={img7} alt="" /></SwiperSlide>
+         </Swiper>
 
+
+         <Swiper
+            slidesPerView={6.2}
+            
+            spaceBetween={30}
+           
+            className="mySwiper"
+         >
+            <SwiperSlide><img src={img1} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={img2} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={img3} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={img4} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={img5} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={img6} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={img7} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={img1} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={img2} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={img3} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={img4} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={img5} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={img6} alt="" /></SwiperSlide>
+            <SwiperSlide><img src={img7} alt="" /></SwiperSlide>
          </Swiper>
       </div>
    );

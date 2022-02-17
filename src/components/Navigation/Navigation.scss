@@ -2,16 +2,13 @@
   content: url(../../images/icon/start8.png);
   margin-left: 16px;
 }
-
 li:nth-child(5) ::after {
   display: none;
 }
-
 .nav-link {
   color: white;
   font-size: 16px;
 }
-
 .nav-link:hover rect {
   opacity: 1;
 }
@@ -22,11 +19,9 @@ li:nth-child(5) ::after {
   padding: 10px;
   border-radius: 20px;
 }
-
 .nav-item img:hover {
   border: 1px solid #18a0fb;
 }
-
 .wallet {
   width: 226px;
   height: 52px;
@@ -57,11 +52,10 @@ li:nth-child(5) ::after {
     padding: 0px 8px !important;
   }
   .wallet_connection_mobile {
-    color: white !important;
+    color: white!important;
     background: #009a0f;
-  }
-  .wallet_connection_mobile::after {
-    display: none;
+    &::after{
+      display: none;
+    }
   }
 }
-/*# sourceMappingURL=Navigation.css.map */
