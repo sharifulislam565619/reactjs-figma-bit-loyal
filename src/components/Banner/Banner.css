@@ -155,7 +155,16 @@
     font-size: 30px;
     z-index: 99;
   }
-  .banner-img > .banner-img1 > .banner-img3 {
+  .banner-img {
     width: 15%;
+  }
+  .banner-img2 {
+    width: 15%;
+  }
+  .banner-img1 {
+    width: 15%;
+  }
+  .banner-img4 {
+    width: 10%;
   }
 }

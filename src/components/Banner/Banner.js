@@ -10,15 +10,17 @@ import "./Banner.css";
 const Banner = () => {
   return (
     <div id="banner_section">
-      <h1 className="banner-title">XXX is</h1>
-      <h2 className="banner-title1">XXXXXXXX Platform</h2>
+      <div className="title">
+        <h1 className="banner-title">XXX is</h1>
+        <h2 className="banner-title1">XXXXXXXX Platform</h2>
+      </div>
       <img className="banner-img" src={img} alt="" />
       <img className="banner-img1" src={img1} alt="" />
       <img className="banner-img2" src={img2} alt="" />
       <img className="banner-img3" src={img3} alt="" />
       <img className="banner-img4" src={img4} alt="" />
       <div className="whitelist">
-        <div style={{background: '#160734'}}>
+        <div style={{ background: '#160734' }}>
           <p>
             The white list is already! <br /> open Check it now
           </p>

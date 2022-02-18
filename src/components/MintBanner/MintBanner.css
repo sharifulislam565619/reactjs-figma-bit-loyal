@@ -59,5 +59,9 @@
   .btn_floating_box {
     left: 0%;
     top: -86%;
+    z-index: auto;
+  }
+  .mint_control_box {
+    margin-top: 90%;
   }
 }

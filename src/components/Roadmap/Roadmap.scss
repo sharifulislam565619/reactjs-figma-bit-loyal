@@ -19,13 +19,13 @@
   padding: 10px 20px;
   width: 400px;
 }
-.roadmap-years li  {
+.roadmap-years li {
   font-size: 16px;
   color: #c2abcb;
 }
 
-// @media only screen and (max-width: 768px) {
-//   .roadmap-details {
-//     display: none;
-//   }
-// }
+@media only screen and (max-width: 768px) {
+  .roadmap-years {
+    width: 283px;
+  }
+}
