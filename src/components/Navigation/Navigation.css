@@ -1,3 +1,9 @@
+.navbar_wrapper {
+  padding-left: 45px;
+  padding-right: 45px;
+  z-index: 100000;
+}
+
 .navbar-nav li:not(.nav-item-no-after) ::after {
   content: url(../../images/icon/start8.png);
   margin-left: 16px;
@@ -49,7 +55,7 @@ li:nth-child(5) ::after {
 }
 
 #walletConnectionModal .modal-content::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -105,8 +111,6 @@ li:nth-child(5) ::after {
 /* ..........responsive....... */
 @media (max-width: 1199px) {
   .navbar-collapse {
-    background: rgba(4, 4, 4, 0.95);
-    z-index: 1000;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -121,6 +125,27 @@ li:nth-child(5) ::after {
     background: #009a0f;
   }
   .wallet_connection_mobile::after {
+    display: none;
+  }
+  .navbar_wrapper {
+    padding-left: 0%;
+    padding-right: 0;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+  }
+  .navbar_wrapper .navbar {
+    margin-top: -10px;
+    z-index: 1000;
+    background: url("../../images/header_banner.png") center top/cover no-repeat;
+  }
+  .navbar_wrapper .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
+  .mobile_brand_toggle {
+    padding: 35px 45px;
+  }
+  .navbar-nav li:not(.nav-item-no-after) ::after {
     display: none;
   }
 }

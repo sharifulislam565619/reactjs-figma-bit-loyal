@@ -8,9 +8,10 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="mx-3">
-      <nav className="navbar  navbar-expand-xl  bg-transparent">
+    <div className="navbar_wrapper" style={{top: '-14px', zIndex: 1000}}>
+      <nav className="navbar navbar-expand-xl  bg-transparent">
         <div className="container-fluid">
+          <div className="mobile_brand_toggle align-items-center d-flex justify-content-between align-items-center flex-grow-1 ">
           <Link className="navbar-brand" to="/">
             LOGO
           </Link>
@@ -57,6 +58,7 @@ const Navigation = () => {
               </svg>
             )}
           </button>
+          </div>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav d-flex align-items-center ms-auto mb-2 mb-lg-0">
               <li className="nav-item d-xl-none">

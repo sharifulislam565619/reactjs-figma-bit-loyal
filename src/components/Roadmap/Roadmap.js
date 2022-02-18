@@ -88,7 +88,7 @@ const Roadmap = () => {
   return (
     <div className="roadmap container my-5 py-5">
       <div className="row">
-        <div className="roadmap-details col-md-6 col-sm-12 px-5">
+        <div className="roadmap-details col-12 col-xl-6 px-5">
           <h1>Roadmap</h1>
           <p>
             <small>
@@ -181,7 +181,7 @@ const Roadmap = () => {
             </ul>
           </div>
         </div>
-        <div className="col-md-6 col-sm-12">
+        <div className="col-12 col-xl-6">
           <div className="row g-0">
             {nft_img_object.map((v) => {
               return (

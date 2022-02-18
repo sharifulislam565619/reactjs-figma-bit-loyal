@@ -1,10 +1,10 @@
 #footer {
   text-align: center;
-  .footer_title{
-    background: url('../../images/contact_us_star.png') center/ contain no-repeat;
+  .footer_title {
+    background: url("../../images/contact_us_star.png") center/ contain
+      no-repeat;
   }
 }
-
 
 #footer h1 {
   font-family: Georama;
@@ -15,18 +15,26 @@
   letter-spacing: 0.02em;
   color: #ffffff;
 }
-.social-icon i {
-  color: #1f1043;
-  background-color: white;
+.social-icon a {
+  color: #1f1043 !important;
+  // background-color: white;
   width: 120px;
   height: 120px;
-  margin-left: 80px;
+  margin-left: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   font-size: 55px;
   text-align: center;
+  @media (max-width: 1199px) {
+    width: 73px;
+    height: 73px;
+    margin-left: 8px;
+  }
+}
+.social-icon li:first-child a{
+  margin-left: 0px!important;
 }
 
 .social-icon ul {
@@ -55,10 +63,10 @@ li:nth-child(5) ::after {
   #footer h1 {
     font-size: 43px;
   }
-  .social-icon i {
-    width: 50px;
-    height: 50px;
-    margin-left: 15px;
-    font-size: 30px;
-  }
+  // .social-icon i {
+  //   width: 50px;
+  //   height: 50px;
+  //   margin-left: 15px;
+  //   font-size: 30px;
+  // }
 }

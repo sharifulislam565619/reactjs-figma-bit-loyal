@@ -13,16 +13,19 @@
   letter-spacing: 0.02em;
   color: #c2abcb;
 }
-
 .roadmap-years {
   background-color: #1e103b;
   border-radius: 15px;
   padding: 10px 20px;
   width: 400px;
 }
-
-.roadmap-years li {
+.roadmap-years li  {
   font-size: 16px;
   color: #c2abcb;
 }
-/*# sourceMappingURL=Roadmap.css.map */
+
+// @media only screen and (max-width: 768px) {
+//   .roadmap-details {
+//     display: none;
+//   }
+// }

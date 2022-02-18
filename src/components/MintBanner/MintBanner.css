@@ -1,6 +1,7 @@
 .whitelist {
-  width: 506px;
-  margin: auto;
+  display: inline-block;
+  padding-left: 55px;
+  padding-right: 55px;
   z-index: 1000;
   position: relative;
   font-size: 20px;

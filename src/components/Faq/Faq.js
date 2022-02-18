@@ -77,12 +77,12 @@ const Faq = () => {
   return (
     <div className="container faq my-3 my-md-5 py-3 py-md-5">
       <div className="row">
-        <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+        <div className="col-12 col-xl-6 d-flex justify-content-center align-items-center">
           <div className="faq_content_box">
             <h1 className="p-3 p-md-5">FAQ</h1>
           </div>
         </div>
-        <div className="col-md-6 col-sm-12 text-white text-start">
+        <div className="col-12 col-xl-6 text-white text-start">
           {datas?.map((data) => (
             <div key={data.id} className="row align-items-center text-white">
               <div className="col-md-12 text-white">

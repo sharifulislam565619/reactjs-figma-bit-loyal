@@ -18,18 +18,20 @@ const Banner = () => {
       <img className="banner-img3" src={img3} alt="" />
       <img className="banner-img4" src={img4} alt="" />
       <div className="whitelist">
-        <p>
-          The white list is already! <br /> open Check it now
-        </p>
-        <p className="wallet">
-          <a href="#" style={{ fontSize: "20px" }}>
-            Get Whitelisted
+        <div style={{background: '#160734'}}>
+          <p>
+            The white list is already! <br /> open Check it now
+          </p>
+          <p className="wallet">
+            <a href="#" style={{ fontSize: "20px" }}>
+              Get Whitelisted
+            </a>
+            <img src={logo} alt="" />
+          </p>
+          <a className="condition" href="#">
+            Our Conditions
           </a>
-          <img src={logo} alt="" />
-        </p>
-        <a className="condition" href="#">
-          Our Conditions
-        </a>
+        </div>
       </div>
     </div>
   );
