@@ -4,16 +4,17 @@ import icon2 from "../../images/icon/icon2.png";
 import icon3 from "../../images/icon/icon3.png";
 import img4 from "../../images/icon/image 7.png";
 import "./Navigation.css";
-
+import { Link } from "react-router-dom";
 const Navigation = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <div className="mx-3">
       <nav className="navbar  navbar-expand-xl  bg-transparent">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             LOGO
-          </a>
+          </Link>
+
           <button
             onClick={() => setToggle(!toggle)}
             className="shadow-0 text-white border-0 bg_transparent d-xl-none"
@@ -59,7 +60,13 @@ const Navigation = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav d-flex align-items-center ms-auto mb-2 mb-lg-0">
               <li className="nav-item d-xl-none">
-                <button className="btn mb-2 rounded-pill btn-lg wallet_connection_mobile">Wallet Connection</button>
+                <button
+                  className="btn mb-2 rounded-pill btn-lg wallet_connection_mobile"
+                  data-bs-toggle="modal"
+                  data-bs-target="#walletConnectionModal"
+                >
+                  Wallet Connection
+                </button>
               </li>
               <li className="nav-item">
                 <a className="nav-link " aria-current="page" href="#">
@@ -193,15 +200,179 @@ const Navigation = () => {
               </li>
 
               <div className="wallet ms-3 d-none d-xl-flex align-items-center">
-                <a href="#">Wallet Connection</a>
+                <a
+                  href="javascript:void(0)"
+                  data-bs-toggle="modal"
+                  data-bs-target="#walletConnectionModal"
+                >
+                  Wallet Connection
+                </a>
                 <img src={img4} alt="" />
               </div>
             </ul>
           </div>
         </div>
       </nav>
+      <ConnectionModal></ConnectionModal>
     </div>
   );
 };
 
 export default Navigation;
+
+function ConnectionModal() {
+  const modal_object_data = [
+    {
+      id: 1,
+      img: require("../../images/nft/nft1.png"),
+      name: "Monkey",
+      tags: "#Common",
+      price: "0.90",
+    },
+    {
+      id: 2,
+      img: require("../../images/nft/nft1.png"),
+      name: "Monkey",
+      tags: "#Common",
+      price: "0.90",
+    },
+    {
+      id: 3,
+      img: require("../../images/nft/nft1.png"),
+      name: "Monkey",
+      tags: "#Common",
+      price: "0.90",
+    },
+    {
+      id: 4,
+      img: require("../../images/nft/nft1.png"),
+      name: "Monkey",
+      tags: "#Common",
+      price: "0.90",
+    },
+    {
+      id: 5,
+      img: require("../../images/nft/nft1.png"),
+      name: "Monkey",
+      tags: "#Common",
+      price: "0.90",
+    },
+    {
+      id: 6,
+      img: require("../../images/nft/nft1.png"),
+      name: "Monkey",
+      tags: "#Common",
+      price: "0.90",
+    },
+    {
+      id: 7,
+      img: require("../../images/nft/nft1.png"),
+      name: "Monkey",
+      tags: "#Common",
+      price: "0.90",
+    },
+    {
+      id: 8,
+      img: require("../../images/nft/nft1.png"),
+      name: "Monkey",
+      tags: "#Common",
+      price: "0.90",
+    },
+
+    {
+      id: 9,
+      img: require("../../images/nft/nft1.png"),
+      name: "Monkey",
+      tags: "#Common",
+      price: "0.90",
+    },
+    {
+      id: 10,
+      img: require("../../images/nft/nft1.png"),
+      name: "Monkey",
+      tags: "#Common",
+      price: "0.90",
+    },
+    {
+      id: 11,
+      img: require("../../images/nft/nft1.png"),
+      name: "Monkey",
+      tags: "#Common",
+      price: "0.90",
+    },
+    {
+      id: 12,
+      img: require("../../images/nft/nft1.png"),
+      name: "Monkey",
+      tags: "#Common",
+      price: "0.90",
+    },
+  ];
+  return (
+    <div
+      className="modal fade"
+      id="walletConnectionModal"
+      tabIndex={-1}
+      aria-labelledby="walletConnectionModalLabel"
+      aria-hidden="true"
+    >
+      <div className="modal-dialog modal-dialog-scrollable modal-xl modal-dialog-centered">
+        <div className="modal-content  p-3 p-md-5">
+          <div className="modal-header border-0">
+            <h5 className="modal-title" id="walletConnectionModalLabel">
+              MY COLLECTION (5)
+            </h5>
+            <button
+              type="button"
+              className="border-0 outline-0 bg_transparent m-0 p-0"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width={26}
+                height={26}
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M12.9 10.9592L1.94083 0L0 1.94083L10.9592 12.9L0.569255 23.29L2.51009 25.2308L12.9 14.8409L23.29 25.2308L25.2308 23.29L14.8409 12.9L25.8001 1.94084L23.8592 2.32458e-06L12.9 10.9592Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+          <div className="modal-body  p-3 px-md-5">
+            <div className="row g-3 g-xl-5">
+              {modal_object_data.map((v) => {
+                return (
+                  <div key={v.id} className="col-6 col-md-4 col-xl-3">
+                    <div className="col_wrapper">
+                      <div className="card w-100 bg_transparent">
+                        <img src={v.img} className="card-img-top" alt="img" />
+                        <div className="card-body">
+                          <div className="d-flex justify-content-between card_content">
+                            <div className="box text-start">
+                              <h6 className="mb-0 p-0">{v.name}</h6>
+                              <span className="common">{v.tags}</span>
+                            </div>
+                            <div className="box price_box">
+                              <span>{v.price}</span>
+                              <span>ETH</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
