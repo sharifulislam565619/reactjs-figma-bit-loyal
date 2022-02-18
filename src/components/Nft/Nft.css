@@ -6,6 +6,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
+  margin-left: 26px;
   margin-top: 30px;
   /* Center slide text vertically */
   display: -webkit-box;
@@ -22,11 +23,21 @@
 .swiper-grid-column > .swiper-wrapper {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 #nft_swiper_wrapper .swiper-slide:nth-of-type(1) {
   margin-left: 10%;
 }
 /*# sourceMappingURL=Nft.css.map */
+
+@media (max-width: 1199px) {
+  .swiper-slide {
+    margin-left: 26px;
+  }
+  .swiper-slide img {
+    width: 144px;
+    height: 119px;
+  }
+}
